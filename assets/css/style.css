@@ -1,6 +1,16 @@
 body {
 	transition: 0.4s;
-  }
+	overflow-x: hidden;
+}
+
+hr {
+	width: 60%;
+	margin: auto;
+}
+
+.guide {
+	border: 2px solid #ececec;
+}
 
 .about span,
 .educ span,
@@ -10,7 +20,7 @@ body {
 
 .navbar,
 .close-button {
-	background: transparent;
+	background: #ffffff;
 	transition: 0.5s;
 	height: 65px;
 }
@@ -19,7 +29,6 @@ body {
 	font-size: 26px;
 	font-weight: 800;
 	text-transform: uppercase;
-	color: #fff;
 	text-decoration: none;
 }
 
@@ -29,7 +38,7 @@ body {
 }
 
 .offcanvas {
-	background: #00000099;
+	background: #ffffff;
 }
 
 .navbar-toggler,
@@ -41,7 +50,8 @@ body {
 .navbar button,
 .navbar active,
 .offcanvas-title {
-	color: white !important;
+	color: #000000 !important;
+	font-weight: bold;
 }
 
 .navbar-icon,
@@ -52,70 +62,97 @@ body {
 .navbar-toggler:focus {
 	box-shadow: none;
 }
+
+.shadow {
+	background-color: #000649;
+}
 			
 .home {
-	width: 100%;
-	height: 115vh;
-	margin-top: -85px;
-	padding-top: 15em;
-	text-align: center;
-	background:linear-gradient(#10121899, #10121899), url(../image/bg-photo.png);
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 100dvh;
+	text-align: end;
+	margin-top: 20px;
 }
 			
 .home h1 {
 	font-family: 'Electrolize';
 	font-size: 5em;
 	font-weight: bold;
+	line-height: 1;
+}
+
+.home-pic img {
+	height: 450px;
+	border-radius: 65% 35% 65% 35%;
+	box-shadow: 0px 0px 10px 0px #00000040;
+	background-color: #5182ff;
+	transition: .3s;
+}
+
+.home-pic img:hover {
+	transform: scale(1.2);
+	border-radius: 50%;
+	background-color: #4175FC;
+	box-shadow: 0px 0px 20px 0px #00000094;
+}
+
+.home-icon {
+	width: 450px;
+	padding-top: 20px;
+}
+
+.home-icon ul{
+	border: 1px #00000050 solid;
+	border-radius: 100px;
+	box-shadow: 0px 0px 10px 0px #00000040;
+	gap: 30px;
+}
+
+.home-icon li {
+	display: inline;
+}
+
+.home-icon img {
+	height: 35px;
+	transition: .3s;
+}
+
+.home-icon img:hover {
+	transform: scale(1.4);
 }
 			
 .about {
-	width: 100%;
-	height: 115vh;
-	padding-top: 7em;
+	padding: 7em 0;
 	text-align: center;
-	background: linear-gradient(90deg, #000000 45%, #FFFFFF00 70%), url(../image/pic.png);
-	background-position: right center;
-	background-repeat: no-repeat;
-	background-size: 70%;
-	background-size: cover;
+	height: 100vh;
 }
 	
-.about-header hr {
+.about hr {
 	width: 80%;
 	height: 2px;
-	background-color: white;
+	background-color: #4175FC;
 	opacity: 100;
 	margin: auto;
 }
 
 .aboutme {
-	padding-right: 35vw;
-	padding-left: 0px;
-	padding-top: 70px;
-	color: white;
+	padding-top: 30px;
+	color: #000000;
 	font-size: 1.3em;
+	text-align: start;
 }
 
-.home, 
-.about h1, h2 {
-	color: white;
-}
+.aboutme img {
+	height: 300px;
+	border-radius: 50% 50% 50% 50%;
+	box-shadow: 0px 0px 10px 0px #00000040;
 	
+}
+
 .skills-educ {
-	width: 100%;
-	padding-top: 7em;
+	padding: 6em;
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	background: linear-gradient(#FFFAF3E8, #FFFAF3E8), url(../image/bg1.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 
@@ -137,11 +174,12 @@ body {
 .skillset,
 .educlist {
 	background-color: #FFFFFF;
-	border-radius: 20px;
-	box-shadow: 0px 0px 10px 0px #00000082;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px #00000040;
 	padding: 20px;
 	margin-bottom: 20px;
 	text-align: left;
+	transition: .3s;
 }
 
 .skillset h3 {
@@ -153,6 +191,7 @@ body {
 	border-radius: 20px;
 	margin-bottom: 10px;
 	width: 100%;
+	transition: .3s;
 }
 
 .educ-header-pic{
@@ -196,15 +235,10 @@ body {
 }
 
 .portfolio {
-	width: 100%;
 	padding-top: 7em;
 	text-align: center;
-	background: linear-gradient(#E4DFD9F0, #E4DFD9F0), url(../image/bg1.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 }
+
 
 .portfolio-header {
 	padding-bottom: 100px;
@@ -213,16 +247,17 @@ body {
 .portfolio-header hr {
 	width: 80%;
 	height: 2px;
-	background-color: rgb(0, 0, 0);
+	background-color: #4175FC;
 	opacity: 100;
 	margin: auto;
 	margin-bottom: 25px;
 }
 
-.portfolio span {
+.portfolio-header span {
 	font-size: 1.2em;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 50px;
 }
+
 
 .portfolio-content {
 	display: flex;
@@ -232,7 +267,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+}
+
+.portfolio-content-pic img {
+	width: 100%;
 }
 
 .portfolio-list {
@@ -240,49 +278,24 @@ body {
 }
 
 .portfolio-list hr {
-	width: 80%;
+	width: 83%;
 	height: 2px;
 	background-color: rgb(0, 0, 0);
 	opacity: 100;
-	margin: 50px auto;
+	margin: 70px auto;
 }
 
-.carousel-item {
-	width: 35vw;
-	height: 300px !important;
-	overflow: hidden;
-	border-radius: 5px;
-}
-
-.carousel-inner {
-	box-shadow: 0px 0px 10px 0px #00000082;
-	border-radius: 5px;
-}
-
-.carousel-item img {
-	display: block;
-	height: 100%;
-	width: 100%;
-	object-fit: contain;
-	border-radius: 3px;
-	background-color: #00000020;	
-}
-
-.carousel-icon{
-	background-color: #000000;	
-	border-radius: 5px;
-	font-size: 2em !important;
-}
 
 .portfolio-content-info-text {
 	text-align: left;
 }
 
 .portfolio-content-info-text h2 {
-	color: #00053D;
+	color: #000649;
 	font-weight: bold;
 	margin: auto;
 	font-size: 2em;
+	padding-top: 5px;
 }
 
 .portfolio-content-info-text h6 {
@@ -293,7 +306,34 @@ body {
 
 .portfolio-content-info-text span {
 	text-align: justify;
-	font-size: 1em;
+	font-size: 1.1em;
+}
+
+.portfolio-content-info-text img {
+	height: 32px;
+}
+
+.portfolio-content-info-text li {
+	display: inline;
+	padding-right: 20px;
+}
+
+.btn-view {
+	color: #000000;
+	text-decoration: none;
+	border: 2px solid transparent;
+	border-bottom: 2px solid #4175FC;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .2s;
+}
+
+.btn-view:hover {
+	color: #ffffff;
+	background-color: #4175FC;
+	border: 2px solid #4175FC;
+	border-radius: 3px;
+	box-shadow: 0px 0px 15px 1px #4176fc;
 }
 
 .footer {
@@ -326,13 +366,24 @@ body {
 
 .progress:hover,
 .educlist:hover {
-	transition: .4s;
 	transform: scale(1.05);
 }
 
 
 @media (max-width: 990px) { 
-	.home-header h1 {
+	.home-pic img {
+		height: 320px;
+	}
+
+	.home-icon {
+		width: 350px;
+	}
+
+	.home-icon ul{
+		gap: 20px;
+	}
+
+	.home h1 {
 		font-size: 3em;
 	}
 
@@ -342,7 +393,7 @@ body {
 		font-size: 2em;
 	}
 
-	.home-header h2,
+	.home h3,
 	.skills h3,
 	.educ h3 {
 		font-size: 1.5em;
@@ -353,20 +404,12 @@ body {
 	}
 
 	.aboutme {
-		padding-top: 40px;
-		color: white;
-		font-size: 1.1em;
+		padding-top: 10px;
+		font-size: 1em;
 	}
 
-	.about {
-		width: 100%;
-		height: 115vh;
-		padding-top: 7em;
-		text-align: center;
-		background-image: linear-gradient(90deg, #000000 45%, #FFFFFF00 70%), url('assets/image/pic.png');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+	.aboutme img {
+		height: 200px;
 	}
 
 	.portfolio-content {
@@ -384,19 +427,14 @@ body {
 	.portfolio-content-info-text h6 {
 		font-size: .9em;
 	}
-	
-	.carousel-item {
-		width: 60vw;
-		height: 250px !important;
+
+	.portfolio-content-pic img {
+		width: 75%;
+		margin-bottom: 10px;
 	}
-	
-	.carousel-item img {
-		display: block;
-		height: 100%;
-		width: 100%;
-		object-fit: contain;
-		border-radius: 3px;
-		background-color: #00000030;
+
+	.btn-view {
+		margin: auto;
 	}
 
 	.footer {
@@ -409,6 +447,35 @@ body {
 }
 
 @media (max-width: 767px) { 
+	.home {
+		text-align: center;
+		margin-top: 35px;
+		flex-direction: column-reverse;
+	}
+
+	.home-pic img {
+		height: 360px;
+		margin-bottom: -130px;
+	}
+
+	.home-icon {
+		padding-top: 5px;
+		margin: auto;
+	}
+
+	.home-icon img {
+		height: 30px;
+	}
+
+	.home-icon ul{
+		gap: 25px;
+	}
+
+
+	.home h1 {
+		font-size: 2.3em;
+	}
+
 	.navbar {
 		height: 70px;
 	}
@@ -425,16 +492,29 @@ body {
 		padding: 5px 15px;
 	}
 
+	.about {
+		height: auto;
+	}
+
 	.aboutme {
 		padding-top: 40px;
-		color: white;
 		font-size: 1em;
 	}
 
+	.aboutme img {
+		height: 250px;
+		margin-bottom: 20px;
+	}
 
-	.carousel-item {
-		width: 80vw;
-		height: 250px !important;
+
+	.portfolio-header span {
+		font-size: 1em;
+		padding: 0px 0px;
+	}
+
+	.portfolio-content-info-text span {
+		text-align: justify;
+		font-size: 1em;
 	}
 
 	.footer {
@@ -449,10 +529,24 @@ body {
 }
 
 @media (max-width: 576px) { 
+	.home-pic img {
+		height: 180px;
+	}
+
+	.home-icon {
+		width: 300px;
+	}
+
 	.aboutme {
-		padding-top: 40px;
-		color: white;
-		font-size: 0.9em;
+		padding: 30px 50px;
+	}
+
+	.aboutme img {
+		height: 170px;
+	}
+
+	.skills-educ {
+		padding: 1em;
 	}
 
 	.portfolio-content-info-text h2 {
