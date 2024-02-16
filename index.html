@@ -17,7 +17,7 @@
 	</head>
 	
 	<body> 
-		<nav class="navbar navbar-expand-md fixed-top" id="header">
+		<nav class="navbar navbar-expand-md fixed-top prevent-select" id="header">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#home">
 					<img src="assets/image/JD-Logo.png" class="navbar-logo">Joshua Delgado
@@ -56,7 +56,7 @@
 					<h1>Hello I am Joshua! </h1>
 					<h3>I am an Front-End Web Developer</h3>
 				</div>
-				<div class="home-icon">
+				<div class="home-icon prevent-select">
 					<ul class="d-flex justify-content-center p-2" >
 						<li><img src="./assets/image/html.png"></li>
 						<li><img src="./assets/image/css.png"></li>
@@ -66,8 +66,8 @@
 					</ul>
 				</div>
 			</div> 
-			<div class="container home-pic d-flex m-auto justify-content-center col-md-5" data-aos="zoom-in">
-				<img src="./assets/image/jd-pic.png">
+			<div class="container home-pic d-flex m-auto justify-content-center col-md-5 prevent-select" data-aos="zoom-in">
+				<img src="./assets/image/jd-picture.png">
 			</div>
 		</div>
 
@@ -80,7 +80,7 @@
 					<hr>
 				</div>
 				<div class="container-fluid d-flex flex-wrap flex-row justify-content-center align-items-center aboutme">
-					<div class="col-md-6 d-flex justify-content-center" data-aos="zoom-in">
+					<div class="col-md-6 d-flex justify-content-center prevent-select" data-aos="zoom-in">
 						<img src="./assets/image/bg1.png">
 					</div>
 					<div class="col-md-5" data-aos="fade-left">
@@ -99,6 +99,14 @@
 						<span>
 							I am a hard-working, dedicated worker who likes to give my best at everything I do. I am highly organized and efficient.
 						</span>
+						<div class="download_resume">
+							<a href = "./assets/cv/Joshua-Delgado-Resume.pdf"
+							Download = "Joshua-Delgado-Resume">
+								<button type="button" class="btn-view px-4 py-1">
+									<i class="bi bi-download pe-2"></i>Download My CV
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -113,7 +121,7 @@
 						<h1>SKILLS</h1>
 						<hr>
 					</div>
-						<div class="container skillset" data-aos="zoom-in">
+						<div class="container skillset prevent-select" data-aos="zoom-in">
 							<h3>WEB DEVELOPMENT</h3>
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -211,7 +219,7 @@
 					<div data-aos="zoom-in">
 						<div class="container educlist">
 							<div class="container educ-header-pic">
-								<img src="assets/image/STI.png">
+								<img src="assets/image/STI.png" class="prevent-select">
 								<div class="educ-header-schoolname">
 									<h6>SENIOR HIGH SCHOOL</h6>
 									<h3>STI College Lucena</h3>
@@ -233,7 +241,7 @@
 					<div data-aos="zoom-in">
 						<div class="container-fluid educlist" >
 							<div class="container-fluid educ-header-pic">
-								<img src="assets/image/SLSU.png">
+								<img src="assets/image/SLSU.png" class="prevent-select">
 								<div class="educ-header-schoolname">
 									<h6>COLLEGE</h6>
 									<h3>Southern Luzon State University</h3>
@@ -279,12 +287,12 @@
 			</div>
 			<div class="container-fluid portfolio-list">
 				<div class="container portfolio-content">
-					<div class="container portfolio-content-pic col-lg-5 p-2"  data-aos="zoom-in">
+					<div class="container portfolio-content-pic col-lg-5 p-2 prevent-select"  data-aos="zoom-in">
 						<img src="./assets/image/1. SLSU Map 1 - (User) blurred.png">
 					</div>
 					<div class="container portfolio-content-info col-lg-6"  data-aos="fade-left">
 						<div class="container portfolio-content-info-text">
-							<div class="container border-bottom pb-2">
+							<div class="container border-bottom pb-2 prevent-select">
 								<li><img src="./assets/image/html.png"></li>
 								<li><img src="./assets/image/css.png"></li>
 								<li><img src="./assets/image/js.png"></li>
@@ -313,7 +321,7 @@
 									As for the <b>users</b>, the user interacts with the map on the webpage, once the user hovered over the interactive map markers it will show the campus brief information as well as the campus logo. The user can also click the marker in order to view the full details of the campus.
 								</span>
 							</div>
-							<div class="container d-flex gap-4">
+							<div class="container d-flex gap-4 prevent-select">
 								<button type="button" class="btn-view px-4 py-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 									<i class="bi bi-globe2 pe-1" ></i>View Live
 								</button>
@@ -333,12 +341,12 @@
 				<hr data-aos="zoom-in">
 
 				<div class="container portfolio-content">
-					<div class="container portfolio-content-pic col-lg-5 p-2"  data-aos="zoom-in">
+					<div class="container portfolio-content-pic col-lg-5 p-2 prevent-select"  data-aos="zoom-in">
 						<img src="./assets/image/Student College Admission 1 - blurred.png">
 					</div>
 					<div class="container portfolio-content-info col-lg-6"  data-aos="fade-left">
 						<div class="container portfolio-content-info-text">
-							<div class="container border-bottom pb-2">
+							<div class="container border-bottom pb-2 prevent-select">
 								<li><img src="./assets/image/html.png"></li>
 								<li><img src="./assets/image/css.png"></li>
 								<li><img src="./assets/image/js.png"></li>
@@ -366,7 +374,7 @@
 									The <b>users (students)</b> can log in and fill up the blank boxes with their personal information, and the school they attended last. The user (students) can also attach some files for their birth certificate, last school grades, and other documents that are required when applying for college.
 								</span>
 							</div>
-							<div class="container d-flex gap-4">
+							<div class="container d-flex gap-4 prevent-select">
 								<button type="button" class="btn-view px-4 py-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 									<i class="bi bi-globe2 pe-1" ></i>View Live
 								</button>
@@ -385,12 +393,12 @@
 				<hr data-aos="zoom-in">
 
 				<div class="container portfolio-content">
-					<div class="container portfolio-content-pic col-lg-5 p-2"  data-aos="zoom-in">
+					<div class="container portfolio-content-pic col-lg-5 p-2 prevent-select"  data-aos="zoom-in">
 						<img src="./assets/image/Main Frame.png">
 					</div>
 					<div class="container portfolio-content-info col-lg-6"  data-aos="fade-left">
 						<div class="container portfolio-content-info-text">
-							<div class="container border-bottom pb-2">
+							<div class="container border-bottom pb-2 prevent-select">
 								<li><img src="./assets/image/java.png"></li>
 								<li><img src="./assets/image/php.png"></li>
 								<li><img src="./assets/image/mysql.png"></li>
@@ -416,7 +424,7 @@
 									<b><i>The Developers are Joshua Anthony Delgado, Dhan Angelo Calucin and their research adviser Dr. Arvin Natividad</i></b>
 								</span>
 							</div>
-							<div class="container d-flex gap-4">
+							<div class="container d-flex gap-4 prevent-select">
 								<button type="button" class="btn-view px-4 py-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 									<i class="bi bi-globe2 pe-1" ></i>View Live
 								</button>
