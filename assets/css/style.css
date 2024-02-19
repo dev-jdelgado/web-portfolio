@@ -343,16 +343,42 @@ button {
 }
 
 @media (max-width: 576px) { 
+	.navbar-brand {
+		font-size: 15px;
+	}
+	
 	.home-pic img {
 		height: 250px;
 	}
 
 	.home-icon {
-		width: 300px;
+		width: 280px;
+	}
+
+	.home-icon ul{
+		gap: 20px;
+	}
+
+	.about p,
+	.text-exp-educ {
+		font-size: 17px;
+	}
+	
+	.projects p,
+	.text-resume {
+		font-size: 15px;
 	}
 
 	button {
-		font-size: 13px;
+		font-size: 11px;
+	}
+
+	.portfolio {
+		text-align: center;
+	}
+
+	.portfolio img {
+		height: 30px;
 	}
 
 	.footer {
