@@ -81,7 +81,6 @@ button {
 
 .navbar a,
 .navbar button,
-.navbar active,
 .offcanvas-title {
 	color: #000000 !important;
 }
@@ -94,6 +93,18 @@ button {
 .navbar-toggler:focus {
 	box-shadow: none;
 }
+
+.navbar-nav .active {
+	color: #fff !important;
+	background: linear-gradient(160deg, #1e30f3 0%, #e21e80 100%);
+	border-radius: 3px;
+}
+
+.nav-link:hover {
+	color: #1e30f3 !important;
+}
+
+
 
 .header-hr {
     width: 100%;
@@ -329,6 +340,10 @@ button {
 	.navbar-logo {
 		height: 50px;
 		padding: 5px 15px;
+	}
+
+	.nav-link {
+		padding: 10px;
 	}
 
 	.footer {
