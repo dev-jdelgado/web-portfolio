@@ -30,7 +30,8 @@ button {
 
 .icon,
 .zoom-sm,
-.zoom-md {
+.zoom-md,
+.card img {
 	transition: .3s;
 }
 
@@ -104,7 +105,14 @@ button {
 	color: #1e30f3 !important;
 }
 
-
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
 
 .header-hr {
     width: 100%;
@@ -179,6 +187,44 @@ button {
 .portfolio li {
     display: inline;
     padding-right: 20px;
+}
+
+.modal-body {
+    height: 480px; 
+}
+
+.card img:hover {
+	opacity: .3;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+	background: #4175FC;
+}
+  
+.overlay:hover {
+	opacity: .8;
+	box-shadow: 0px 0px 15px 2px #4176fc;
+}
+  
+.overlay .text {
+	color: white;
+	font-size: 80px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .btn-cv {
