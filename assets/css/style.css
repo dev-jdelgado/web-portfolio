@@ -136,7 +136,7 @@ button {
 }
 
 .home-pic img{
-	height: 450px;
+	height: 420px;
 	border-radius: 65% 35% 65% 35%;
 	box-shadow: 0px 0px 10px 0px #00000040;
 	background: #1e30f3;
@@ -303,7 +303,7 @@ button {
 
 @media (max-width: 990px) { 
 	.home-pic img {
-		height: 320px;
+		height: 300px;
 	}
 
 	.home-icon {
@@ -347,7 +347,7 @@ button {
 	}
 
 	.home-pic img {
-		height: 300px;
+		height: 280px;
 		margin-bottom: -100px;
 	}
 
@@ -409,7 +409,7 @@ button {
 	}
 	
 	.home-pic img {
-		height: 250px;
+		height: 230px;
 	}
 
 	.home-icon {
