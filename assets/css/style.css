@@ -189,8 +189,8 @@ button {
     padding-right: 20px;
 }
 
-.modal-body {
-    height: 480px; 
+.modal-content {
+    height: 80vh; 
 }
 
 .card img:hover {
@@ -439,7 +439,7 @@ button {
 	}
 
 	.portfolio img {
-		height: 30px;
+		height: 27px;
 	}
 
 	.footer {
