@@ -176,6 +176,10 @@ button {
 	font-size: 25px;
 }
 
+.exp-list {
+	list-style-position: outside;
+}
+
 .projects p {
 	font-size: 20px;
 }
