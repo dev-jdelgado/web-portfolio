@@ -1,5 +1,6 @@
 body {
 	transition: 0.3s;
+	background-color: #F1F5F9;
 }
 
 .prevent-select {
@@ -151,7 +152,6 @@ button {
 
 
 .home-icon {
-	width: 450px;
 	padding-top: 20px;
 }
 
@@ -310,9 +310,7 @@ button {
 		height: 300px;
 	}
 
-	.home-icon {
-		width: 350px;
-	}
+
 
 	.home-icon ul{
 		gap: 20px;
@@ -416,9 +414,6 @@ button {
 		height: 230px;
 	}
 
-	.home-icon {
-		width: 280px;
-	}
 
 	.home-icon ul{
 		gap: 20px;
