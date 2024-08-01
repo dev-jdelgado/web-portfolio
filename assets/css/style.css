@@ -153,6 +153,7 @@ button {
 
 .home-icon {
 	padding-top: 20px;
+	width: 450px;
 }
 
 .home-icon ul{
@@ -310,7 +311,9 @@ button {
 		height: 300px;
 	}
 
-
+	.home-icon {
+		width: 350px;
+	}
 
 	.home-icon ul{
 		gap: 20px;
