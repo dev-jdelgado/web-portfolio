@@ -361,7 +361,7 @@ button {
 	}
 
 	.home-icon img {
-		height: 30px;
+		height: 25px;
 	}
 
 	.home-icon ul{
@@ -417,16 +417,16 @@ button {
 	}
 
 	.home-icon {
-		width: 280px;
+		width: 250px;
 	}
 
 	.home-icon ul{
-		gap: 20px;
+		gap: 12px;
 	}
 
 	.about p,
 	.text-exp-educ {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	
 	.projects p,
