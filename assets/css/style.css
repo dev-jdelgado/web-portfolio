@@ -198,6 +198,10 @@ button {
     height: 80vh; 
 }
 
+.card img {
+	height: 220px;
+}
+
 .card img:hover {
 	opacity: .3;
 }
